@@ -31,28 +31,38 @@
 	font-weight:700;
 }
 
+	html {
+		max-width:960px;	
+		margin:0 auto;
+		scrollbar-width:none;
+	}
+	
+::-webkit-scrollbar {
+		dispaly:none;
+		width:0;
+		height:0;
+	}
+
 	body {
 		font-weight:500;
-		background-color:#f7f7f7;
 		word-spacing:-0.5px;	
-		margin:0;	
+		margin:0 auto;	
 		font-size:14px;
 		position:relative;
+		max-width:inherit;
+		box-shadow:0 0 40px 0px;
+		overflow:hidden;
 	}
 	
 	main {
-		display:-webkit-box;
-		display:flex;
-		-webkit-box-orient:vertical;
-		-webkit-box-direction:normal;
-		        flex-direction:column;
-		-webkit-box-align:center;
-		        align-items:center;
-		-webkit-box-pack:center;
-		        justify-content:center;
-		margin:0 auto 8px;
-		max-width:922px;
-		width:100%;
+		background-color:#f7f7f7;
+		margin:0 auto;
+		max-width:inherit;
+		position:relative;
+		overflow-y:auto;
+		height:100vh;
+		scrollbar-width:none;
+		-ms-overflow-style:none;
 	}
 	
 	* {
@@ -111,6 +121,7 @@
 		height:49px;
 		box-sizing:border-box;
 		width:100%;
+		max-width:inherit;
 		background-color:#18bbc6;
 		box-shadow: 0 0 2px 0.2px #000;
 		color:white;
@@ -118,7 +129,6 @@
 		position:fixed;
 		z-index:90;
 		top:0;
-		left:0;
 	}
 	.navbar-wrapper {
 		margin:0 auto;
@@ -247,7 +257,7 @@
 		border:1px solid #cccccc;
 		color:#1a1a1a;
 		background-color:#fefeff;
-		width:100%;
+		margin:0 18px;
 		min-height:100px;
 	}
 	
@@ -662,12 +672,12 @@ footer.footer .wrapper .footer-container td a:hover {
 
 
 .classic-footer {
-	margin:10px 0;
+	margin:18px 0;
 	border:1px solid #ccc;
 	border-width:1px 0;
 	background-color:#ffffff;
 	font-size:13.5px;
-	min-height:36px;
+	height:28px;
 	padding:3px;
 	display:table;
 	box-sizing:border-box;
@@ -833,22 +843,12 @@ footer.footer .wrapper .footer-container td a:hover {
   </footer>
 	</section>
 
-<div style="visibility:hiddenl">
 <footer class="classic-footer" style="width:100%;">
 	<a href="https://github.com/Awikia">GitHub</a>
 	<a href="https://discord.gg/9JEWA8S">Discord Server</a>
 	<a href="http://el.alpha-technologies.wikia.com/wiki/Project:Contact">Contact A Techno</a>
 	<a href="mpisto-store://Mpisto/MpistoWar">Download War 2018 App</a>
 </footer>
-</div>
-<div style="position:absolute; bottom:0; left:0; width:100%;">
-<footer class="classic-footer" style="width:100%;">
-	<a href="https://github.com/Awikia">GitHub</a>
-	<a href="https://discord.gg/9JEWA8S">Discord Server</a>
-	<a href="http://el.alpha-technologies.wikia.com/wiki/Project:Contact">Contact A Techno</a>
-	<a href="mpisto-store://Mpisto/MpistoWar">Download War 2018 App</a>
-</footer>
-</div>
 
 </main>
 </body>
