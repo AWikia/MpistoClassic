@@ -213,7 +213,6 @@
 	.navbar-wrapper {
 		margin:0 auto;
 		width:auto;
-		padding:0 18px;
 	}
 	svg {
 	fill:currentColor;
@@ -256,6 +255,21 @@
 	.navbar .link.company {
 		width:100%;
 	}
+
+	.navbar .link * {
+		vertical-align:middle;
+	}
+
+	.chevron {
+		width:14px;
+		height:14px;
+	}
+	
+	.dropdown:hover .chevron {
+		-webkit-transform:rotate(180deg);
+		transform:rotate(180deg);
+	}
+
 	.avatar {
 		border-radius:15%;
 		width:24px;
@@ -808,8 +822,8 @@ function theme() {
 			<div class="tr">
 			<div class="dropdown">
 				<a class="link cell">
-					<svg xmlns="http://www.w3.org/2000/svg" class="icon ">
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-menu" /> </svg>
+					<span>Explore</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon chevron">
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-dropdown-tiny" /> </svg>
 				</a>
 				<div class="dropdown-content left">
 					<a>Company</a>
@@ -826,7 +840,8 @@ function theme() {
 				</a>
 				<div class="dropdown">
 				<a class="link cell">
-					<img class="avatar" src="HM100.png"> <span class="name">HM100</span> </img>
+					<img class="avatar" src="HM100.png"></img> <span class="name">HM100</span> <svg xmlns="http://www.w3.org/2000/svg" class="icon chevron">
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-dropdown-tiny" /> </svg>
 				</a>
 				<div class="dropdown-content right">
 					<a>Mpisto War 2018 Userpage</a>
@@ -848,7 +863,7 @@ function theme() {
 					<div class="table">
 						<div class="tr">
 							<h1 class="title cell" style="text-align:left"><a>Mpisto Central</a></h1>
-							<div class="counter cell"><big>14</big>/<big>400</big> <span>Articles</span></div>
+							<div class="counter cell"><big>15</big>/<big>400</big> <span>Articles</span></div>
 							<a class="link cell" title="Add new page"><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-article" /> 
 					</svg></a>
@@ -875,7 +890,7 @@ function theme() {
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-reply" /> 
 					</svg><span>Comments</span></button>
 					<button><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-clock-tiny" /> 
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-clock" /> 
 					</svg><span>History</span></button>
 					<button><svg xmlns="http://www.w3.org/2000/svg" class="icon">
   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wds-icons-trash" /> 
